@@ -12,16 +12,12 @@ public class GameManager : MonoBehaviour
 
     [Header("Scores UI")]
     public Text scoreText;
-    public Text daimondText;
-    public Text starText;
 
     [Header("GameOver")]
     public GameObject gameOverPanel;
     public Text lastScoreText;
 
     int score = 0;
-    int totalDaimond;
-    int totalStar;
     bool countScore;
 
     private void Awake()
@@ -34,13 +30,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        //Total daimond
-        //totalDaimond = PlayerPrefs.GetInt("totalDaimond");
-        //daimondText.text = totalDaimond.ToString();
 
-        ////Total star
-        //totalStar = PlayerPrefs.GetInt("totalStar");
-        //starText.text = totalStar.ToString();
     }
 
     // Update is called once per frame
@@ -76,9 +66,9 @@ public class GameManager : MonoBehaviour
     {
         while(countScore)
         {
-            yield return new WaitForSeconds(1f);
             score++;
             scoreText.text = score.ToString();
+            yield return new WaitForSeconds(1f);
         }
     }
 
@@ -91,19 +81,4 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
-    public void getStar()
-    {
-        int newStar = totalStar++;
-        PlayerPrefs.SetInt("totalStar", newStar);
-        starText.text = newStar.ToString();
-    }
-    public void getDaimond()
-    {
-        int newDaimond = totalDaimond++;
-        PlayerPrefs.SetInt("totalDaimond", newDaimond);
-        daimondText.text = newDaimond.ToString();
-    }
-
-
 }

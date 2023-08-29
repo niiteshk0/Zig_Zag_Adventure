@@ -10,7 +10,7 @@ public class PlatForm : MonoBehaviour
     public GameObject star;
     void Start()
     {
-        int randNum = Random.Range(1, 21);
+        int randNum = Random.Range(1, 40);
         Vector3 tempPos = transform.position;
         tempPos.y += 1.2f;
 
@@ -33,6 +33,6 @@ public class PlatForm : MonoBehaviour
     {
         Instantiate(platformBlastEffect, transform.position, Quaternion.identity);
         GetComponent<Rigidbody>().isKinematic = false;
-        Destroy(gameObject, 05f);
+        Destroy(gameObject, 2f);
     }
 }

@@ -407,6 +407,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  textPanel: {fileID: 0}
+  player: {fileID: 0}
+  TapTostart: {fileID: 0}
+  audioSource: {fileID: 0}
+  audioclip: {fileID: 0}
+  daimondText: {fileID: 0}
+  starText: {fileID: 0}
 --- !u!1 &4329482700917688332
 GameObject:
   m_ObjectHideFlags: 0
