@@ -352,7 +352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.565, y: 374}
+  m_AnchoredPosition: {x: -8.3, y: 386}
   m_SizeDelta: {x: 691.6005, y: 90.5248}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &278471132
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: d76053fba7902c34db61f163f4267aac, type: 3}
     m_FontSize: 82
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 121
@@ -463,7 +463,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7659478357009804125, guid: 98914df7463483c4d8db91ecd9cbfd8d, type: 3}
       propertyPath: moveSpeed
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4329482700917462058, guid: 98914df7463483c4d8db91ecd9cbfd8d, type: 3}
       propertyPath: m_RootOrder
@@ -573,8 +573,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.99585, y: -95.21655}
-  m_SizeDelta: {x: -299.9879, y: -1031.1196}
+  m_AnchoredPosition: {x: -14.932007, y: 14.07605}
+  m_SizeDelta: {x: -309.86, y: -1249.705}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &550783130
 MonoBehaviour:
@@ -986,7 +986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.565002, y: 103}
+  m_AnchoredPosition: {x: -18.565002, y: 203}
   m_SizeDelta: {x: 691.6005, y: 90.5248}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &879396971
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: b1e5385f74a3e3f45a51802ceda61f23, type: 3}
     m_FontSize: 70
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 121
@@ -1129,6 +1129,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 181621004}
   followSpeed: 5
+  lerpTime: 0.33
+  myColors:
+  - {r: 1, g: 0.70980394, b: 0.22352943, a: 0}
+  - {r: 0.81588894, g: 0.14653791, b: 0.8396226, a: 0}
+  - {r: 0.99765015, g: 1, b: 0, a: 0}
+  - {r: 0.17986828, g: 0.7305748, b: 0.8113208, a: 0}
+  - {r: 1, g: 0.22352943, b: 0.43137258, a: 0}
 --- !u!1001 &968543991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1476,7 +1483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.8256, y: -198.3107}
+  m_AnchoredPosition: {x: -1.8256, y: -181}
   m_SizeDelta: {x: 601.7933, y: 83.4685}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134752696

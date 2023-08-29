@@ -24,16 +24,20 @@ public class item : MonoBehaviour
         {
             if(gameObject.tag == "star")
             {
+                GameManager.instance.getStar();
                 Instantiate(starBlast, transform.position, Quaternion.identity);
             }
 
             if(gameObject.tag == "Daimond")
             {
+                GameManager.instance.getDaimond();
                 Instantiate(daimondBlast, transform.position, Quaternion.identity);
             }
-            Debug.Log("Enter in Collison");
-
             Destroy(gameObject);
         }
+        
+        
     }
+
+    
 }

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6348904496885704238}
   - component: {fileID: 6345157753206971855}
   - component: {fileID: 7189622168971494437}
-  - component: {fileID: 4809393375028703477}
   m_Layer: 0
   m_Name: 5 Side Diamond
   m_TagString: Daimond
@@ -98,20 +97,6 @@ SphereCollider:
   m_Radius: 1.2893292
   m_Center: {x: -0.0076453686, y: 0.12031925, z: -0.008220196}
 --- !u!114 &7189622168971494437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6361876404223601088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd72b931af89b542aad853ccdccc77f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starBlast: {fileID: 7560828077081668021, guid: d05bf62bf0e94b34ab9a1e303bbdc550, type: 3}
-  daimondBlast: {fileID: 6361876404223601088}
---- !u!114 &4809393375028703477
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
