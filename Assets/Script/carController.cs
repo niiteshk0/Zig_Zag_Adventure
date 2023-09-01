@@ -13,6 +13,7 @@ public class carController : MonoBehaviour
     [Header("audio")]
     public AudioSource audioSource;
     public AudioClip audioclip;
+    public AudioClip audioStarCollect;
     
 
     [Header("Text")]
@@ -23,6 +24,7 @@ public class carController : MonoBehaviour
 
     private void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -39,6 +41,8 @@ public class carController : MonoBehaviour
         {
             GameManager.instance.GameOver();
             audioSource.Stop();
+            
+
         }
         
     }
@@ -53,6 +57,7 @@ public class carController : MonoBehaviour
         {
             changeDr();
             audioSource.PlayOneShot(audioclip);
+
             
         }
     }
@@ -74,6 +79,7 @@ public class carController : MonoBehaviour
     {
         if(collision.gameObject.tag == "star")
         {
+            audioSource.PlayOneShot(audioStarCollect);  
             starCollect++;
             starText.text = starCollect.ToString();
         }
